@@ -16,6 +16,10 @@
             Name : 
         </label>
         <p><input type="text" id="name" formControlName="name"></p>
+        <label for="prenom">
+            Prenom :
+        </label>
+        <p><input type="text" id="prenom" formControlName="prenom"></p>
     </div>
 <br>
     <div>
@@ -25,6 +29,19 @@
         <p><input type="text" id="adresse" formControlName="adresse"></p>
     </div>
 <br>
-    <button class="btn btn-success" type="submit">Valider</button>
+    <div>
+        <label for="coordonneesbancaire">
+            Coordonnées Bancaire :
+        </label>
+        <p><input type="number" id="coordonneesbancaire" formControlName="coordonneesbancaire"></p>
+        <label for="numerocryptage">
+            Numéro de Cryptage :
+        </label>
+        <p><input type="password" id="numerocryptage" formControlName="numerocryptage"></p>
+    </div>
+    <div>
+        <button class="btn btn-success" type="submit">Valider</button>
+        <button class="btn btn-danger" type="reset">Annuler</button>
+    </div>
 </form>
 

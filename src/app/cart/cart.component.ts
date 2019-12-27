@@ -23,8 +23,11 @@ export class CartComponent implements OnInit {
 
       this.checkoutForm = this.formBuilder.group({
         name:'',
-        adresse:''
-      })
+        adresse:'',
+        prenom:'',
+        coordonneesbancaire:'',
+        numerocryptage:''
+      });
     }
 
     onSubmit(customerData){
