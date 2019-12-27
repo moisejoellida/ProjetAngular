@@ -1,0 +1,30 @@
+<h2>Le contenu de votre panier</h2>
+
+<p>
+    <a routerLink="/shipping">Prix de livraison</a>
+</p>
+
+<div class="cart-item" *ngFor="let item of items">
+    <span>{{item.name}}</span>
+    <span>{{item.price | currency}}</span>
+</div>
+
+<form [formGroup]="checkoutForm" (ngSubmit)="onSubmit(checkoutForm.value)">
+
+    <div>
+        <label for="name">
+            Name : 
+        </label>
+        <p><input type="text" id="name" formControlName="name"></p>
+    </div>
+<br>
+    <div>
+        <label for="adresse">
+            Adresse : 
+        </label>
+        <p><input type="text" id="adresse" formControlName="adresse"></p>
+    </div>
+<br>
+    <button class="btn btn-success" type="submit">Valider</button>
+</form>
+

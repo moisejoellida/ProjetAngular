@@ -1,0 +1,14 @@
+[
+    {
+      "type": "Du jour au lendemain",
+      "price": 25.99
+    },
+    {
+      "type": "Dans 2 jours",
+      "price": 9.99
+    },
+    {
+      "type": "Postale",
+      "price": 2.99
+    }
+  ]
